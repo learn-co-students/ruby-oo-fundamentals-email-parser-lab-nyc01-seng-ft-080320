@@ -25,7 +25,6 @@
       @email_addresses = email_addresses
     end
     
-    
     def parse 
       email_array = @email_addresses.split(/[\s,\,]/)
       email_array.delete("")
