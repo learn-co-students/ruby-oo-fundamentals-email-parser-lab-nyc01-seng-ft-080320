@@ -8,15 +8,17 @@ require 'pry'
 email_addresses = "john@doe.com, person@somewhere.org"
 
 class EmailAddressParser
+    attr_accessor :string
+    
     def initialize(string)
         @string = string
     end
 
-    attr_accessor :list
+    
 
     def parse
-        @list = @string.split(%r{,\s*|\s})
-        @list.uniq
+        @string = @string.split(%r{,\s*|\s})
+        @string.uniq
     end
 end
 
