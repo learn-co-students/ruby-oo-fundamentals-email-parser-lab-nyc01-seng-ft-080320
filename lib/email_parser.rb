@@ -1,20 +1,20 @@
-# class EmailAddressParser
-#     attr_accessor :email_addresses
+class EmailAddressParser
+    attr_accessor :email_addresses
   
-#     def initialize(email_addresses)
-#       @email_addresses = email_addresses
-#     end
+    def initialize(email_addresses)
+      @email_addresses = email_addresses
+    end
     
-#     def parse 
-#       email_array = @email_addresses.split(" ") 
+    def parse 
+      email_array = @email_addresses.split(" ") 
     
-#       stripped = email_array.map do |email|
-#         email = email.delete(",")
-#         email.strip
-#       end
-#       stripped.uniq
-#     end
-#   end
+      stripped = email_array.map do |email|
+        email = email.delete(",")
+        email.strip
+      end
+      stripped.uniq
+    end
+  end
 
   ########### OR USING REGEX ############
 
