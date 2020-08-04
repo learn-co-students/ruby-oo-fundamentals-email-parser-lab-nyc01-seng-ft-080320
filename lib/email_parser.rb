@@ -2,6 +2,7 @@
 # emails. The parse method on the class should separate them into
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
+<<<<<<< HEAD
 require "pry"
 
 
@@ -27,5 +28,14 @@ class EmailAddressParser
 
     attr_accessor :emails
     
+=======
+# Build a class EmailAddressParser that accepts a string of unformatted 
+# emails. The parse method on the class should separate them into
+# unique email addresses. The delimiters to support are commas (',')
+# or whitespace (' ').
+
+class EmailAddressParser
+    attr_accessor :emails
+>>>>>>> b839b8b2c1b89a1e808a740df63f77434c3b8df6
 end
 
