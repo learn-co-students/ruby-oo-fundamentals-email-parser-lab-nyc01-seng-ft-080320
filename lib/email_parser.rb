@@ -12,7 +12,7 @@ class EmailAddressParser
     end
 
     def parse #parses CSV emails
-        emails.split(/, |/).uniq
+        emails.split(/, | /).uniq
     end
     
 
